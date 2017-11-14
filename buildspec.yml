@@ -19,10 +19,7 @@ phases:
       # - command
   build:
     commands:
-      - ls
-      - pwd
       - cd ci-tester
-      - ls
       - mvn clean package war:war
   #post_build:
     #commands:
