@@ -1,0 +1,35 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  #install:
+    #commands:
+      # - command
+      # - command
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+      - ls
+      - pwd
+      - cd ci-tester
+      - ls
+      - mvn clean package war:war
+  #post_build:
+    #commands:
+      # - command
+      # - command
+artifacts:
+  files:
+    - gs-spring-boot-0.1.0.war
+  discard-paths: yes
+  base-directory: ci-tester/target
