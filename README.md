@@ -1,2 +1,4 @@
 # ci-tester
-Build to test a CI build process
+Small Java Spring App to test a CI workflow/pipeline.
+
+
