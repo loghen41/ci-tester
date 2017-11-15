@@ -20,7 +20,7 @@ phases:
   build:
     commands:
       - cd ci-tester
-      - mvn clean package
+      - mvn clean && mvn package
   #post_build:
     #commands:
       # - command
