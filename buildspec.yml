@@ -20,13 +20,13 @@ phases:
   build:
     commands:
       - cd ci-tester
-      - mvn clean package war:war
+      - mvn clean package
   #post_build:
     #commands:
       # - command
       # - command
 artifacts:
   files:
-    - gs-spring-boot-0.1.0.war
+    - ci-tester-0.1.0.war
   discard-paths: yes
   base-directory: ci-tester/target
